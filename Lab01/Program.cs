@@ -13,3 +13,4 @@ Console.WriteLine($"Имя: {studentName}");
 Console.WriteLine($"Группа: {studentGroup}");
 Console.WriteLine($"Любимый язык программирования: {studentPLanguage}");
 Console.WriteLine($"Сколько лет программирует: {expInProgram}");
+System.Console.WriteLine("Конец визитки");
