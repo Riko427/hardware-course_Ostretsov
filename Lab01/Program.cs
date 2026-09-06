@@ -2,14 +2,17 @@
 Console.WriteLine("ВИЗИТКА СИСТЕМЫ");
 Console.ResetColor();
 
-string studentName = "Владимир";
+string studentName = "Острецов В. П.";
 string studentGroup = "ПМБИ-261";
+string studentPLanguage = "Python";
+int expInProgram = 2;
 Console.ForegroundColor = ConsoleColor.Cyan;
 Console.WriteLine("\n[Студент]");
 Console.ResetColor();
 Console.WriteLine($"Имя: {studentName}");
 Console.WriteLine($"Группа: {studentGroup}");
-Console.WriteLine($"Дата: {DateTime.Now:dd.MM.yyyy HH:mm}");
+Console.WriteLine($"Любимый язык программирования: {studentPLanguage}");
+Console.WriteLine($"Сколько лет программирует: {expInProgram}");
 
 Console.ForegroundColor = ConsoleColor.Cyan;
 Console.WriteLine("\n[Компьютер]");
