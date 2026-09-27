@@ -1,18 +1,13 @@
-﻿int min = int.MinValue;
-int max = int.MaxValue;
+﻿string text = "�";
+byte[] textBytes = System.Text.Encoding.UTF8.GetBytes(text);
 
-int overflowed = max + 1;
-int underflowed = min - 1;
+Console.WriteLine($"Текст: {text}");
+Console.WriteLine($"Количество символов: {text.Length}");
+Console.WriteLine($"Количество байтов: {textBytes.Length}");
 
-Console.Write("max: ");
-foreach (byte b in BitConverter.GetBytes(max))
+Console.Write("Байты: ");
+foreach (byte b in textBytes)
 {
-    Console.Write($"{b:X2}");
-}
-Console.WriteLine();
-Console.Write("overflowed: ");
-foreach (byte b in BitConverter.GetBytes(overflowed))
-{
-    Console.Write($"{b:X2}");
+    Console.Write($"{b:X2} ");
 }
 Console.WriteLine();
